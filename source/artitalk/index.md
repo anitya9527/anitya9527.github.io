@@ -3,9 +3,8 @@ title: Artitalk
 date: 2021-04-09 00:24:45
 type: "artitalk"
 ---
-<!-- 引用 artitalk -->
-<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
-<!-- 存放说说的容器 -->
+
+
 <div id="artitalk_main"></div>
 <script>
 new Artitalk({
@@ -13,3 +12,4 @@ new Artitalk({
     appKey: '51VPgjqlolOeqms1JdbUp6M1' // Your LeanCloud appKey
 })
 </script>
+

@@ -2,6 +2,6 @@
 title: {{ title }}
 date: {{ date }}
 tags:
-top_img: /cover/{{ title }}/cover.jpg
-cover: /cover/{{ title }}/cover.jpg
+top_img: /cover/{{ title }}/cover.webp
+cover: /cover/{{ title }}/cover.webp
 ---

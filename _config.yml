@@ -11,10 +11,26 @@ author: 无常
 language: zh-CN
 timezone: ''
 
+# abbrlink config
+abbrlink:
+  alg: crc32      #support crc16(default) and crc32
+  rep: hex        #support dec(default) and hex
+  drafts: false   #(true)Process draft,(false)Do not process draft. false(default) 
+  # Generate categories from directory-tree
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+     enable: true  #true(default)
+     depth:        #3(default)
+     over_write: false 
+  auto_title: false #enable auto title, it can auto fill the title by path
+  auto_date: false #enable auto date, it can auto fill the date by time today
+  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.
+
+
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://anitya.fun
-permalink: :year/:month/:day/:title/
+url: https://anitya.fun
+permalink: :year/:month/:day/:abbrlink/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -99,8 +115,8 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 
-    # Artitalk
-  # see https://artitalk.js.org/
+# Artitalk
+# see https://artitalk.js.org/
 artitalk:
   enable: true
   appId: zFol94alxNTCbu4PJbYmzuS3-MdYXbMMI
@@ -110,10 +126,47 @@ artitalk:
   # option:
   # front_matter:
 
+
 algolia:
   applicationID: 'LNT4K4ORQN'
   apiKey: '2bc3f64dfb04b71dbf8b08b1da83f8fa'
   indexName: 'blog'
+
+aplayer:
+  meting: true
+  asset_inject: false
+
+# Feed & RSS
+# Github: https://github.com/hexojs/hexo-generator-feed
+feed:
+  enable: true
+  type: 
+    - atom
+    - rss2
+  path: 
+    - atom.xml
+    - rss2.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: images/favicon.png
+  autodiscovery: true
+  template:
+
+# SEO
+# Github: https://github.com/hexojs/hexo-filter-nofollow
+# 为网站使用到的所有外链
+# 添加 rel="noopener external nofollow noreferrer", 
+# 可以有效地加强网站SEO和防止权重流失
+nofollow:
+  enable: true
+  field: site
+  exclude:
+    - 'exclude1.com'
+    - 'exclude2.com'
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
