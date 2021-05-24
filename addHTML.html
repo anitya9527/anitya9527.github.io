@@ -5,24 +5,24 @@
     </div>
 </div>
 <script>
-    if ('serviceWorker' in navigator) {
+    if ("serviceWorker" in navigator) {
         if (navigator.serviceWorker.controller) {
-            navigator.serviceWorker.addEventListener('controllerchange', function() {
+            navigator.serviceWorker.addEventListener("controllerchange", function() {
                 showNotification()
             })
         }
 
-        window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/sw.js')
+        window.addEventListener("load", function() {
+            navigator.serviceWorker.register("/sw.js")
         })
 
         // 「弹出添加到主屏对话框」事件
-        window.addEventListener('beforeinstallprompt', event => {
+        window.addEventListener("beforeinstallprompt", event => {
             // 这个 `event.userChoice` 是一个 Promise ，在用户选择后 resolve
             event.userChoice.then(result => {
                 console.log(result.outcome)
-                    // 'accepted': 添加到主屏
-                    // 'dismissed': 用户不想理你并向你扔了个取消
+                    // "accepted": 添加到主屏
+                    // "dismissed": 用户不想理你并向你扔了个取消
             })
         })
 
@@ -31,28 +31,28 @@
     function showNotification() {
         if (GLOBAL_CONFIG.Snackbar) {
             var snackbarBg =
-                document.documentElement.getAttribute('data-theme') === 'light' ?
+                document.documentElement.getAttribute("data-theme") === "light" ?
                 GLOBAL_CONFIG.Snackbar.bgLight :
                 GLOBAL_CONFIG.Snackbar.bgDark
             var snackbarPos = GLOBAL_CONFIG.Snackbar.position
             Snackbar.show({
-                text: '已更新最新版本',
+                text: "已更新最新版本",
                 backgroundColor: snackbarBg,
                 duration: 50000,
                 pos: snackbarPos,
-                actionText: '點擊刷新',
-                actionTextColor: '#fff',
+                actionText: "點擊刷新",
+                actionTextColor: "#fff",
                 onActionClick: function(e) {
                     location.reload()
                 },
             })
         } else {
             var showBg =
-                document.documentElement.getAttribute('data-theme') === 'light' ?
-                '#49b1f5' :
-                '#1f1f1f'
+                document.documentElement.getAttribute("data-theme") === "light" ?
+                "#49b1f5" :
+                "#1f1f1f"
             var cssText = `top: 0; background: ${showBg};`
-            document.getElementById('app-refresh').style.cssText = cssText
+            document.getElementById("app-refresh").style.cssText = cssText
         }
     }
 </script>

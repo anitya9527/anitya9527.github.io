@@ -23,10 +23,14 @@
 - class_name: CNSS 的小姐姐和小 GayGay 们
   class_desc: Cohesion Network Security Studio
   link_list:
+    - name: 凝聚网络安全工作室
+      link: https://blog.cnss.io/
+      avatar: https://blog.cnss.io/images/favicon/android-chrome-192x192.png
+      descr: Stay Hacking, Stay Exploring
     - name: evi0s' Blog
       link: https://evi0s.com/
       avatar: https://evi0s.com/favicon.ico
-      descr: 大黑客超哥
+      descr: 大黑阔超哥
     - name: N0rth3's Blog
       link: https://northity.com/
       avatar: https://northity.com/img/a.jpg
@@ -91,3 +95,23 @@
       link: https://ccdragon.cc/
       avatar: https://ccdragon.cc/wp-content/uploads/2021/02/cropped-Snipaste_2021-02-14_14-59-40-32x32.jpg
       descr: 戳戳龙！
+    - name: 星尘独奏曲
+      link: https://www.starduster.me/
+      avatar: https://www.starduster.me/wp-content/uploads/2020/02/cropped-gravator_max-32x32.png
+      descr: 送学弟飞机杯的流光姐姐～
+    - name: lc4t's blog
+      link: https://blog.lc4t.me/
+      avatar: https://blog.lc4t.me/images/avatar.jpg
+      descr: 被安全耽误的心理学大师贺贺学长
+    - name: Arpe1s' Blog
+      link: https://blog.arpe1s.xyz/
+      avatar: https://arpels.github.io/images/profile.png
+      descr: 密码学大手子敏彰兄
+    - name: Aione's blog
+      link: https://aione.space/
+      avatar: https://aione.space/img/new/favicon-32x32.png
+      descr: 很勇的杰哥～
+    - name: Yadomin的博客
+      link: https://yadom.in/
+      avatar: https://avatars.githubusercontent.com/u/25575115?s=460&u=fa9ebb3ca1f0e18cd7bf6184f752a09f0eabf268&v=4
+      descr: 全栈背锅侠 Yadomin
