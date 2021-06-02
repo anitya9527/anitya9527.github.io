@@ -15,8 +15,35 @@
     <atom:link href="https://anitya.fun/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>我写我想写的，你看你想看的。</description>
-    <pubDate>Tue, 20 Apr 2021 19:45:56 GMT</pubDate>
+    <pubDate>Wed, 02 Jun 2021 08:19:18 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>泰利斯的还原论</title>
+      <link>https://anitya.fun/2021/06/02/bcb44da1/</link>
+      <guid>https://anitya.fun/2021/06/02/bcb44da1/</guid>
+      <pubDate>Wed, 02 Jun 2021 05:56:52 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt;</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://anitya.fun/tags/%E5%93%B2%E5%AD%A6/">哲学</category>
+      
+      <category domain="https://anitya.fun/tags/%E8%BF%98%E5%8E%9F%E8%AE%BA/">还原论</category>
+      
+      
+      <comments>https://anitya.fun/2021/06/02/bcb44da1/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>卓酱的自建情报数据库和通识教育的缺失</title>
